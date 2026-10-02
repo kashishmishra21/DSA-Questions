@@ -15,8 +15,11 @@ class Solution(object):
             while( left < right):
                 current_sum = nums[i] + nums[left] + nums[right] # current sum show krega
                 # check the closest
+                if(current_sum == target):
+                    return current_sum
                 if(abs(current_sum - target) < abs(closest - target)):
                     closest = current_sum
+                
                 if (current_sum < target):
                     left +=1
                 else:
