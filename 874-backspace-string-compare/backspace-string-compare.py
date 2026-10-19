@@ -20,7 +20,7 @@ class Solution(object):
                 else:
                     break
 
-        # Find the next valid character in t
+        
             while j >= 0:
                 if t[j] == '#':
                     skip_t += 1
