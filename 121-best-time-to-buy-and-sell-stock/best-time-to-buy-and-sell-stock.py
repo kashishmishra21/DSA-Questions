@@ -1,5 +1,6 @@
 class Solution:
     def maxProfit(self, prices: list[int]) -> int:
+        # // har jgh two pointers nhi lgana hota hai
         min_price = prices[0]
         max_price = 0
         for i in range(len(prices)):
